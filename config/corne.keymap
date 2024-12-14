@@ -7,19 +7,11 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <dt-bindings/zmk/pointing.h>
-
-//#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
-//#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
-
-#define default_layer 0
-#define a 1
-#define b 2
-#define c 3 
-#define d 4
-#define e 5
-#define f 6
-
 
 &mt {
     tapping-term-ms = <120>;
@@ -46,14 +38,14 @@
                 default_layer {
                         bindings = <
    &kp GRAVE    &kp Q           &mt LGUI W      &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &none
-   &kp EXCL     &kp A           &mt LALT S      &mt LCTRL D     &kp LSHFT F     &kp G           &kp H           &mt LSHFT J     &mt LCTRL K     &mt LALT L      &kp SEMI        &kp MINUS
+   &kp EXCL     &kp A           &mt LALT S      &mt LCTRL D     &mt LSHFT F     &kp G           &kp H           &mt LSHFT J     &mt LCTRL K     &mt LALT L      &kp SEMI        &kp MINUS
    &kp CARET    &kp Z           &mt RALT X      &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RA(COMMA)
-                                                &lt c ESC       &lt b SPACE     &lt a TAB       &lt d RET       &lt e BSPC       &lt f DEL
+                                                &lt 3 ESC       &lt 2 SPACE     &lt 1 TAB       &lt 4 RET       &lt 5 BSPC       &lt 6 DEL
                         >;
                 };
 
 //                                                                                              |
-                           a {
+                           1 {
                         bindings = <
    &none        &none           &none           &none           &none           &none           &none           &none           &none          &none        &none               &none        
    &none        &none           &kp LALT        &kp LCTRL       &kp LSHFT       &none           &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT     &none        
@@ -63,7 +55,7 @@
                 };
 
 //                                                                                              |
-                           b {
+                           2 {
                         bindings = <
    &none        &none           &none           &none           &none           &none           &kp LC(Y)       &kp LC(V)       &kp LC(C)       &kp LC(X)       &kp LC(Y)       &none        
    &none        &none           &kp LALT        &kp LCTRL       &kp LSHFT       &none           &kp CAPS        &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none        
@@ -73,7 +65,7 @@
                 };
 
 //                                                                                              |
-                           c {
+                           3 {
                         bindings = <
    &none        &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           &none        
    &none        &none           &kp LALT        &kp LCTRL       &kp LSHFT       &none           &none           &kp K_PREV      &kp K_VOL_DN    &kp K_VOL_UP    &kp K_NEXT      &none        
@@ -83,7 +75,7 @@
                 };
 
 //                                                                                             |
-                           d {
+                           4 {
                        bindings = <
    &none        &kp LBRC         &kp AMPS       &kp ASTRK       &kp LPAR        &kp RBRC        &none           &none           &none        &none        &none        &none        
    &none        &kp COLON        &kp DLLR       &kp PRCNT       &kp CARET       &kp PLUS        &none           &kp LEFT        &kp DOWN     &kp UP       &kp RIGHT    &none        
@@ -93,7 +85,7 @@
                };
 
 //                                                                                              |
-                           e {
+                           5 {
                         bindings = <
    &none        &kp LBKT        &kp N7          &kp N8          &kp N9          &kp RBKT        &none           &none           &none          &none        &none        &none        
 &kp KP_ASTERISK &kp SEMI        &kp N4          &kp N5          &kp N6          &kp EQUAL       &none           &mt LSHFT LEFT  &mt LCTRL DOWN &mt LALT UP  &kp RIGHT    &none        
@@ -103,7 +95,7 @@
                 };
 
 //                                                                                              |
-                           f {
+                           6 {
                         bindings = <
    &none        &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN       &none           &none           &none          &none        &none        &none        
    &none        &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &none           &mt LSHFT LEFT  &mt LCTRL DOWN &mt LALT UP  &kp RIGHT    &none        
