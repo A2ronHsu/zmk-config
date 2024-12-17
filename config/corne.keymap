@@ -19,7 +19,7 @@
 };
 
 
-/{
+
     behaviors {
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -32,6 +32,7 @@
     };
 
 
+
 //                           1 {
 //                        bindings = <
 //   &none        &none           &none           &none           &none           &none           &none           &none           &none        &none        &none        &none        
@@ -42,6 +43,18 @@
 //                };
 
 / {
+
+    behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <120>;
+            quick-tap-ms = <100>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+    
         keymap {
                 compatible = "zmk,keymap";
 
@@ -117,4 +130,4 @@
         };
 };
 
-};
+
