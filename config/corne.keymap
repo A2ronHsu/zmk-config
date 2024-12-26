@@ -42,15 +42,26 @@
         };
     };
 
+        behaviors {
+        wn: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         bindings = <
-   &kp GRAVE    &kp Q           &hm LGUI W      &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &none
+   &kp GRAVE    &kp Q           &wn LGUI W      &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &none
  &lt 5 EXCL     &kp A           &hm LALT S      &hm LCTRL D     &hm LSHFT F     &kp G           &kp H           &hm LSHFT J     &hm LCTRL K     &hm LALT L      &kp SQT         &kp MINUS
    &kp CARET    &kp Z           &hm RALT X      &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &hm RALT DOT    &kp FSLH        &kp RA(COMMA)
-                                                &lt 3 ESC       &lt 2 SPACE     &lt 1 TAB       &lt 4 RET       &lt 5 BSPC       &lt 6 DEL
+                                                &lt 3 ESC       &lt 2 SPACE     &lt 1 TAB       &lt 4 RET       &lt 5 BSPC      &lt 6 DEL
                         >;
                 };
 
