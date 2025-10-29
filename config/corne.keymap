@@ -97,7 +97,7 @@
 //                                                                                             |
                            4 {
                        bindings = <
-   &TILDE       &kp LBRC         &kp AMPS       &kp ASTRK       &kp LPAR        &kp RBRC        &none           &none           &none           &none        &none        &none        
+   &none        &kp LBRC         &kp AMPS       &kp ASTRK       &kp LPAR        &kp RBRC        &none           &none           &none           &none        &none        &none        
    &none        &kp COLON        &kp DLLR       &kp PRCNT       &kp CARET       &kp PLUS        &none           &hm LSHFT LEFT  &hm LCTRL DOWN  &hm LALT UP  &hm RIGHT    &none        
    &none        &kp TILDE        &kp EXCL       &kp AT_SIGN     &kp HASH        &kp PIPE        &none           &none           &none           &none        &kp RALT     &none        
                                                 &kp LPAR        &kp RPAR        &kp UNDER       &trans          &none           &none
