@@ -108,7 +108,7 @@
                            5 {
                         bindings = <
     &none           &kp LBKT        &kp N7          &kp N8          &kp N9          &kp RBKT        &none           &none           &none           &none        &none             &none
-    &kp KP_ASTERISK &kp SEMI        &kp N4          &kp N5          &kp N6          &kp EQUAL       &none           &km LSHFT LEFT  &hm LCTRL DOWN  &hm LALT UP  &hm RALT RIGHT    &none        
+    &kp KP_ASTERISK &kp SEMI        &kp N4          &kp N5          &kp N6          &kp EQUAL       &none           &hm LSHFT LEFT  &hm LCTRL DOWN  &hm LALT UP  &hm RALT RIGHT    &none        
     &none           &kp GRAVE       &kp N1          &kp N2          &kp N3          &kp BSLH        &kp KP_MINUS    &kp PLUS        &kp COMMA       &kp DOT      &kp RALT KP_SLASH &none        
                                                     &kp N0          &kp SPACE       &kp TAB         &none           &trans          &none
                         >;
