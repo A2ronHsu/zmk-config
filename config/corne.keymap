@@ -65,7 +65,7 @@
                 };
 
 //                                                                                              |
-                           1 {
+                           layer_1 {
                         bindings = <
    &none        &none           &kp LGUI        &none           &none           &none           &none           &none           &none          &none        &none               &none        
    &none        &none           &kp LALT        &kp LCTRL       &kp LSHFT       &none           &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT     &none        
@@ -75,7 +75,7 @@
                 };
 
 //                                                                                              |
-                           2 {
+                           layer_2 {
                         bindings = <
    &none        &none           &kp LGUI        &none           &none           &none           &kp LC(Y)       &kp LC(V)       &kp LC(C)       &kp LC(X)       &kp LC(Y)       &none        
    &none        &none           &kp LALT        &kp LCTRL       &kp LSHFT       &none           &kp CAPS        &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none        
@@ -85,27 +85,27 @@
                 };
 
 //                                                                                              |
-                           3 {
+                           layer_3 {
                         bindings = <
    &bootloader  &none           &kp LGUI        &none           &none           &none           &none           &none           &none           &none           &none           &none        
-   &none        &none           &kp LALT        &kp LCTRL       &kp LSHFT       &none           &out OUT_TOG    &kp K_PREV      &kp K_VOL_DN    &kp K_VOL_UP    &kp K_NEXT      &none        
+   &none        &none           &kp LALT        &kp LCTRL       &kp LSHFT       &none           &out OUT_TOG    &kp C_PREV      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      &none        
    &none        &none           &none           &none           &none           &none           &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &none        
-                                                &trans          &none           &none           &kp K_STOP2     &kp K_PP        &kp K_MUTE
+                                                &trans          &none           &none           &kp C_STOP      &kp C_PP        &kp C_MUTE
                         >;
                 };
 
 //                                                                                             |
-                           4 {
-                       bindings = <
+                           layer_4 {
+                        bindings = <
    &none        &kp LBRC         &kp AMPS       &kp ASTRK       &kp LPAR        &kp RBRC        &none           &none           &none           &kp LGUI     &none        &none        
    &none        &kp COLON        &kp DLLR       &kp PRCNT       &kp CARET       &kp PLUS        &none           &hm LSHFT LEFT  &hm LCTRL DOWN  &hm LALT UP  &kp RIGHT    &none        
    &none        &kp TILDE        &kp EXCL       &kp AT_SIGN     &kp HASH        &kp PIPE        &none           &none           &none           &none        &kp RALT     &none        
                                                 &kp LPAR        &kp RPAR        &kp UNDER       &trans          &none           &none
-                       >;
-               };
+                        >;
+                };
 
 //                                                                                              |
-                           5 {
+                           layer_5 {
                         bindings = <
     &none           &kp LBKT        &kp N7          &kp N8          &kp N9          &kp RBKT        &none           &none           &none           &kp LGUI     &none             &none
     &kp KP_ASTERISK &kp SEMI        &kp N4          &kp N5          &kp N6          &kp EQUAL       &none           &hm LSHFT LEFT  &hm LCTRL DOWN  &hm LALT UP  &kp RIGHT         &none        
@@ -115,7 +115,7 @@
                 };
 
 //                                                                                              |
-                           6 {
+                           layer_6 {
                         bindings = <
    &none        &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN       &none           &none           &none          &kp LGUI     &none        &bootloader  
    &none        &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &none           &hm LSHFT LEFT  &hm LCTRL DOWN &hm LALT UP  &kp RIGHT    &none        
